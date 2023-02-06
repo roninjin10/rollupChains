@@ -37,15 +37,6 @@ export type RollupChain = Chain & {
   isL2: boolean;
 };
 
-/**
- * A more generic rollup chain interface that supports
- * multiple L2 chains connected to the same l1 chain
- */
-// export type MultiRollupChain = Chain & {
-//   l1: MultiRollupChain;
-//   l2s: Record<number, MultiRollupChain>;
-// };
-
 export const mainnet = {
   ...wagmiMainnet,
   l1: wagmiMainnet,
