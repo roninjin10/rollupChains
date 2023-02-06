@@ -52,17 +52,6 @@ optimism.isL2 // returns true
 optimism.isL2 // returns false
 ```
 
-## JSON serialization
-
-The rollup chains are recursive. E.g. `optimism.l1.l2.l1.l2.l1.l2.l1.l2.l1.l2 === optimism`
-
-To get a json serializable version of a rollup chain use the `chain.serializable` property
-
-```typescript
-import { optimism } from "@roninjin10/rollupChains";
-const jsonChain = JSON.stringify(optimism.serializable);
-```
-
 ## TODO
 
 1. (v0.1) export a wrapper around [useNetwork](https://wagmi.sh/react/hooks/useNetwork) from wagmi

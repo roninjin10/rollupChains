@@ -22,11 +22,11 @@ export type RollupChain = Chain & {
   /**
    * The L1 chain in the L1 L2 chain pairing
    */
-  l1: RollupChain;
+  l1: Chain;
   /**
    * The L2 chain in the L1 L2 chain pairing
    */
-  l2: RollupChain;
+  l2: Chain;
   /**
    * True if the chain is an L1 chain
    */
@@ -35,15 +35,6 @@ export type RollupChain = Chain & {
    * True if the chain is an L2 chain
    */
   isL2: boolean;
-  /**
-   * A JSON serializable version of the chain object
-   */
-  serializable: Chain & {
-    l1: Chain;
-    l2: Chain;
-    isL1: boolean;
-    isL2: boolean;
-  };
 };
 
 /**
@@ -57,76 +48,32 @@ export type RollupChain = Chain & {
 
 export const mainnet = {
   ...wagmiMainnet,
-  get l1(): RollupChain {
-    return mainnet;
-  },
-  get l2(): RollupChain {
-    return optimism;
-  },
+  l1: wagmiMainnet,
+  l2: wagmiOptimism,
   isL1: true,
   isL2: false,
-  serializable: {
-    ...wagmiMainnet,
-    l1: wagmiMainnet,
-    l2: wagmiOptimism,
-    isL1: true,
-    isL2: false,
-  },
 } as const satisfies RollupChain;
 
 export const optimism = {
   ...wagmiOptimism,
-  get l1(): RollupChain {
-    return mainnet;
-  },
-  get l2(): RollupChain {
-    return optimism;
-  },
-  serializable: {
-    ...wagmiOptimism,
-    l1: wagmiMainnet,
-    l2: wagmiOptimism,
-    isL1: false,
-    isL2: true,
-  },
+  l1: wagmiMainnet,
+  l2: wagmiOptimism,
   isL1: false,
   isL2: true,
 } as const satisfies RollupChain;
 
 export const goerli = {
   ...wagmiGoerli,
-  get l1(): RollupChain {
-    return goerli;
-  },
-  get l2(): RollupChain {
-    return optimismGoerli;
-  },
-  serializable: {
-    ...wagmiGoerli,
-    l1: wagmiGoerli,
-    l2: wagmiOptimismGoerli,
-    isL1: true,
-    isL2: false,
-  },
+  l1: wagmiGoerli,
+  l2: wagmiOptimismGoerli,
   isL1: true,
   isL2: false,
 } as const satisfies RollupChain;
 
 export const optimismGoerli = {
   ...wagmiOptimismGoerli,
-  get l1(): RollupChain {
-    return goerli;
-  },
-  get l2(): RollupChain {
-    return optimismGoerli;
-  },
-  serializable: {
-    ...wagmiOptimismGoerli,
-    l1: wagmiGoerli,
-    l2: wagmiOptimismGoerli,
-    isL1: false,
-    isL2: true,
-  },
+  l1: wagmiGoerli,
+  l2: wagmiOptimismGoerli,
   isL1: false,
   isL2: true,
 } as const satisfies RollupChain;

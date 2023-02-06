@@ -25,7 +25,7 @@ it("should have l2 prop", () => {
 
 it("should have isL1 prop", () => {
   expect(rollupChains.optimismGoerli.isL1).toBe(false);
-  expect(rollupChains.optimism.l1.isL1).toBe(true);
+  expect(rollupChains.optimism.isL1).toBe(false);
   expect(rollupChains.mainnet.isL1).toBe(true);
   expect(rollupChains.goerli.isL1).toBe(true);
 });
