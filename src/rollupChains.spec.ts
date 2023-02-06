@@ -23,16 +23,16 @@ it("should have l2 prop", () => {
   expect(rollupChains.goerli.l2).toBe(rollupChains.optimismGoerli);
 });
 
-it("should have isL1Chain prop", () => {
-  expect(rollupChains.optimismGoerli.isL1Chain).toBe(false);
-  expect(rollupChains.optimism.l1.isL1Chain).toBe(true);
-  expect(rollupChains.mainnet.isL1Chain).toBe(true);
-  expect(rollupChains.goerli.isL1Chain).toBe(true);
+it("should have isL1 prop", () => {
+  expect(rollupChains.optimismGoerli.isL1).toBe(false);
+  expect(rollupChains.optimism.l1.isL1).toBe(true);
+  expect(rollupChains.mainnet.isL1).toBe(true);
+  expect(rollupChains.goerli.isL1).toBe(true);
 });
 
-it("should have isL2Chain prop", () => {
-  expect(rollupChains.optimismGoerli.isL2Chain).toBe(true);
-  expect(rollupChains.optimism.isL2Chain).toBe(true);
-  expect(rollupChains.mainnet.isL2Chain).toBe(false);
-  expect(rollupChains.goerli.isL2Chain).toBe(false);
+it("should have isL2 prop", () => {
+  expect(rollupChains.optimismGoerli.isL2).toBe(true);
+  expect(rollupChains.optimism.isL2).toBe(true);
+  expect(rollupChains.mainnet.isL2).toBe(false);
+  expect(rollupChains.goerli.isL2).toBe(false);
 });
