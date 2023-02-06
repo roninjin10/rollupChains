@@ -5,6 +5,7 @@ import {
   goerli as wagmiGoerli,
   optimismGoerli as wagmiOptimismGoerli,
 } from "@wagmi/chains";
+
 /**
  * L2 chain interface
  * @extends Chain
