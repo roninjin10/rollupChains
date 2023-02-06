@@ -1,8 +1,8 @@
 <p align="center"><b></b></p>
-<p align="center">Rollup aware chains for wagmi<b>
+<p align="center">Rollup aware chains objects extending wagmi<b>
 </b></p>
 
-# rollupChains • [![CI](https://github.com/roninjin10/rollupChains/actions/workflows/tests.yml/badge.svg)](https://github.com/roninjin10/rollupChains/actions/workflows/tests.yml)
+# rollup-chains • [![CI](https://github.com/roninjin10/rollupChains/actions/workflows/tests.yml/badge.svg)](https://github.com/roninjin10/rollupChains/actions/workflows/tests.yml)
 
 A simple drop in replacement for [wagmis existing chain object](https://github.com/wagmi-dev/references/tree/27c9ee2258c5ba75a93db4cfe5f0e6a791e05b80/packages/chains)
 
@@ -30,14 +30,14 @@ const l1ChainId = chain.l1.id;
 install with npm pnpm or yarn
 
 ```bash
-npm i @roninjin10/rollupChains
+npm i @roninjin10/rollup-chains
 ```
 
-Replace all imports of wagmi chains with rollupChains
+Replace all imports of wagmi/chains with @roninjin10/rollup-chains
 
 ```typescript
 // import {mainnet, optimism} from 'wagmi/chains'
-import { mainnet, optimism } from "@roninjin10/rollupChains";
+import { mainnet, optimism } from "@roninjin10/rollup-chains";
 
 // the extend wagmi interface
 mainnet.id

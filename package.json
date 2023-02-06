@@ -1,5 +1,5 @@
 {
-  "name": "@roninjin10/rollupchains",
+  "name": "@roninjin10/rollup-chains",
   "description": "Rollup aware chains for wagmi",
   "version": "0.0.1",
   "main": "dist/rollupChains.js",
