@@ -1,0 +1,23 @@
+on:
+  workflow_dispatch:
+  release:
+
+name: Publish
+
+jobs:
+  build:
+    name: Publish
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: "Setup"
+        uses: ./.github/actions/setup
+
+      - name: Run build
+        run: pnpm build
+
+      - name: Publish package on NPM 📦
+        run: pnpm release
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

@@ -8,9 +8,10 @@
   "scripts": {
     "build": "tsup",
     "test": "vitest src/rollupChains.spec.ts",
+    "typecheck": "tsc --noEmit",
     "lint": "rome check . --apply-suggested",
     "lint:check": "rome check .",
-    "publish": "pnpm publish --tag latest --access public"
+    "release": "pnpm publish --tag latest --access=public"
   },
   "keywords": [
     "wagmi",
