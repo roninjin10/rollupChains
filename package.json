@@ -8,7 +8,7 @@
   "scripts": {
     "build": "tsup",
     "test": "vitest src/rollupChains.spec.ts",
-    "lint": "pnpm lint --apply-suggested",
+    "lint": "rome check . --apply-suggested",
     "lint:check": "rome check .",
     "publish": "pnpm publish --tag latest --access public"
   },
