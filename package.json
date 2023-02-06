@@ -1,7 +1,7 @@
 {
   "name": "@roninjin10/rollupchains",
   "description": "Rollup aware chains for wagmi",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "main": "dist/rollupChains.js",
   "module": "dist/rollupChains.mjs",
   "types": "src/rollupChains.ts",
