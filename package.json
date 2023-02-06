@@ -1,18 +1,23 @@
 {
-  "name": "@roninjin10/l2chains",
+  "name": "@roninjin10/rollupchains",
   "description": "Rollup aware chains for wagmi",
   "version": "1.0.0",
-  "main": "dist/l2Chains.js",
-  "module": "dist/l2Chains.mjs",
-  "types": "src/l2Chains.ts",
+  "main": "dist/rollupChains.js",
+  "module": "dist/rollupChains.mjs",
+  "types": "src/rollupChains.ts",
   "scripts": {
     "build": "tsup",
-    "test": "vitest src/l2Chains.spec.ts",
+    "test": "vitest src/rollupChains.spec.ts",
     "lint": "pnpm lint --apply-suggested",
     "lint:check": "rome check .",
     "publish": "pnpm publish --tag latest --access public"
   },
-  "keywords": [],
+  "keywords": [
+    "wagmi",
+    "rollup",
+    "chains",
+    "constants"
+  ],
   "author": "roninjin10",
   "license": "MIT",
   "devDependencies": {

@@ -1,5 +1,5 @@
 import { it, expect } from "vitest";
-import * as rollupChains from "./l2Chains";
+import * as rollupChains from "./rollupChains";
 import * as wagmiChains from "wagmi/chains";
 
 it("should extend wagmi", () => {
