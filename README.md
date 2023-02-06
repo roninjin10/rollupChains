@@ -57,7 +57,8 @@ optimism.isL2 // returns false
 1. (v0.1) export a wrapper around [useNetwork](https://wagmi.sh/react/hooks/useNetwork) from wagmi
 2. (v0.1) support all existing rollups in @wagmi/chains
 3. (v0.2) Patch wagmi types to return rollupChains instead of chains
-4. (v1) L1 chains supporting more than 1 chain
+4. (v1) Make the getters recursive and return a RollupChain instead of a WagmiChain (earlier commit does this)
+5. (v1) L1 chains supporting more than 1 chain
 
 ### Author: Will Cory 👨🏻‍💻
 
