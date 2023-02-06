@@ -1,10 +1,10 @@
-import { Chain } from "wagmi";
+import { Chain } from "@wagmi/chains";
 import {
   mainnet as wagmiMainnet,
   optimism as wagmiOptimism,
   goerli as wagmiGoerli,
   optimismGoerli as wagmiOptimismGoerli,
-} from "wagmi/chains";
+} from "@wagmi/chains";
 /**
  * L2 chain interface
  * @extends Chain

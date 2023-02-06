@@ -1,6 +1,6 @@
 import { it, expect } from "vitest";
 import * as rollupChains from "./rollupChains";
-import * as wagmiChains from "wagmi/chains";
+import * as wagmiChains from "@wagmi/chains";
 
 it("should extend wagmi", () => {
   expect(rollupChains.optimismGoerli).toMatchObject(wagmiChains.optimismGoerli);
