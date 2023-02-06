@@ -21,4 +21,4 @@ jobs:
         uses: ./.github/actions/setup
 
       - name: Run Linters
-        run: pnpm lint
+        run: pnpm lint:check

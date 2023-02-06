@@ -2,6 +2,10 @@ on:
   workflow_dispatch:
   release:
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 name: Publish
 
 jobs:
