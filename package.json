@@ -1,7 +1,7 @@
 {
   "name": "@roninjin10/rollup-chains",
   "description": "Rollup aware chains for wagmi",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "main": "dist/rollupChains.js",
   "module": "dist/rollupChains.mjs",
   "types": "src/rollupChains.ts",
@@ -23,12 +23,12 @@
   "author": "roninjin10",
   "license": "MIT",
   "devDependencies": {
-    "@wagmi/chains": "^1.6.0",
-    "esbuild": "0.18.13",
+    "@wagmi/chains": "^1.7.0",
+    "esbuild": "0.19.2",
     "rome": "^12.1.3",
-    "tsup": "^7.1.0",
+    "tsup": "^7.2.0",
     "typescript": "^5.1.6",
-    "vitest": "^0.33.0"
+    "vitest": "^0.34.2"
   },
   "peerDependencies": {
     "@wagmi/chains": "*"
