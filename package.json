@@ -4,9 +4,9 @@
   "version": "0.0.2",
   "main": "dist/rollupChains.js",
   "module": "dist/rollupChains.mjs",
-  "types": "src/rollupChains.ts",
+  "types": "dist/rollupChains.d.ts",
   "scripts": {
-    "build": "tsup",
+    "build": "tsup && tsc --emitDeclarationOnly",
     "test": "vitest src/rollupChains.spec.ts",
     "typecheck": "tsc --noEmit",
     "lint": "rome check . --apply-suggested",

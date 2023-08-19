@@ -5,6 +5,8 @@
     "outDir": "dist",
     "target": "ESNext",
     "lib": ["esnext"],
+    "declaration": true,
+    "emitDeclarationOnly": true,
     "module": "commonjs",
     "isolatedModules": true,
     "incremental": true,
