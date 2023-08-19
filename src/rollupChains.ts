@@ -184,3 +184,12 @@ export const zoraGoerli = {
   },
 } as const satisfies OpChainL2;
 
+export const allChains = [wagmiMainnet, wagmiGoerli, wagmiOptimism, wagmiBase, wagmiZora, wagmiOptimismGoerli, wagmiBaseGoerli, wagmiZoraTestnet] as const;
+
+export const l1Chains = [wagmiMainnet, wagmiGoerli] as const;
+
+export const l2Chains = [wagmiOptimism, wagmiBase, wagmiZora, wagmiOptimismGoerli, wagmiBaseGoerli, wagmiZoraTestnet] as const;
+
+export const l2MainnetChains = [wagmiOptimism, wagmiBase, wagmiZora] as const;
+
+export const l2TestnetChains = [wagmiOptimismGoerli, wagmiBaseGoerli, wagmiZoraTestnet] as const;
